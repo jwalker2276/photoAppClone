@@ -3,12 +3,18 @@
   "version": "1.0.0",
   "description": "a clone of instagram using react and redux",
   "scripts": {
-    "build:webpack": "NODE_ENV=production webpack --config webpack.config.prod.js",
+    "build:webpack":
+      "NODE_ENV=production webpack --config webpack.config.prod.js",
     "build": "npm run clean && npm run build:webpack",
-    "test": "NODE_ENV=production mocha './tests/**/*.spec.js' --compilers js:babel-core/register",
+    "test":
+      "NODE_ENV=production mocha './tests/**/*.spec.js' --compilers js:babel-core/register",
     "clean": "rimraf dist",
     "start": "node devServer.js",
     "tunnel": "browser-sync start --proxy localhost:7770 --tunnel wesbos"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jwalker2276/photoAppClone"
   },
   "license": "MIT",
   "dependencies": {
