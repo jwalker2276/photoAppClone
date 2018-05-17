@@ -5,3 +5,5 @@ const Single = React.createClass({
     return <div className="single-photo">I'm the single-photo</div>;
   }
 });
+
+export default Single;
