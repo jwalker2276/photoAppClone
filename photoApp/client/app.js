@@ -10,6 +10,12 @@ import Controller from "./components/Controller";
 import Single from "./components/Single";
 import PhotoGrid from "./components/PhotoGrid";
 
+// Import Raven Error Tracking
+import Raven from "raven-js";
+import { sentry_url } from "./data/config";
+
+Raven.config(sentry_url).install();
+
 // Import React Router
 import { Router, Route, IndexRoute, browserHistory } from "react-router";
 import { Provider } from "react-redux";
